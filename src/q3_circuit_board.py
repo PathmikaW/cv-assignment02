@@ -20,21 +20,21 @@ im2 = cv2.imread('a2_images/c2.jpg', cv2.IMREAD_REDUCED_COLOR_4)
 # TL corner hole, USB connector, BR corner hole, BL corner hole, DC jack, red LED
 
 pts1 = np.array([
-    [ 67,  38],
-    [460,  85],
-    [480, 600],
-    [ 55, 590],
-    [192,  58],
-    [278, 372],
+    [108, 108],   # TL corner hole
+    [390,  72],   # USB connector base
+    [470, 598],   # BR corner hole
+    [ 58, 602],   # BL corner hole
+    [148,  72],   # DC jack base
+    [192, 460],   # red LED
 ], dtype=np.float32)
 
 pts2 = np.array([
-    [ 50,  22],
-    [470,  60],
-    [500, 550],
-    [ 30, 545],
-    [170,  42],
-    [262, 337],
+    [ 90,  82],   # TL corner hole
+    [395,  48],   # USB connector base
+    [492, 552],   # BR corner hole
+    [ 32, 555],   # BL corner hole
+    [128,  48],   # DC jack base
+    [175, 422],   # red LED
 ], dtype=np.float32)
 
 h, w = im2.shape[:2]
